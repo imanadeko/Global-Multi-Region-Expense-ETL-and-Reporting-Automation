@@ -75,24 +75,8 @@ A Block Until Done tool prevents Excel write-lock errors on Output.xlsx. The fir
 
 ---
 
-
-
----
-
-
-
-```text
-======================================================================
-PIPELINE EXECUTION & RECONCILIATION SUMMARY
-======================================================================
-[+] Input Records Read:
-    - North America Expenses  : 108 records (3 countries x 36 months)
-    - South America Expenses  : 108 records (3 countries x 36 months)
-    - Dynamic Manager Records : 10 records across 3 regions
-[+] Cleaned Joined Records    : 216 records (100% match)
-[+] Dropped Left Records      : 0 (No orphan expense entries)
-[+] Unmatched Right Records   : 4 (European countries without expense data)
-[+] Summary Tab Generated     : 6 countries (Brazil, Canada, Chile, Colombia, Mexico, US)
-[+] Detail Tab Generated      : 216 rows x 5 attributes
-======================================================================
-```
+PIPELINE RECONCILIATION
+Inputs:     216 expense rows (NA: 108, SA: 108) | 10 managers (3 regions)
+Join:       216 matched (100%) | 0 orphan expenses | 4 unmatched EU managers
+Outputs:    Summary tab (6 countries) | Detail tab (216 rows x 5 cols)
+Status:     Clean
