@@ -76,6 +76,7 @@ A Block Until Done tool prevents Excel write-lock errors on Output.xlsx. The fir
 ---
 
 PIPELINE RECONCILIATION
+
 Inputs:     216 expense rows (NA: 108, SA: 108) | 10 managers (3 regions)
 
 Join:       216 matched (100%) | 0 orphan expenses | 4 unmatched EU managers
