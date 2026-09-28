@@ -49,51 +49,29 @@ This project delivers a production-grade Alteryx workflow (`.yxmd`) and package 
 
 ## Data Engineering Methodology
 
-### 1. Ingestion & Header Handling
-- **Problem**: Raw regional expense sheets (`NA-1.xlsx` and `SA-1.xlsx`) contain title metadata, empty rows, and note banners spanning rows 1 through 8.
-- **Solution**: The input configuration sets `ImportLine = 9`. This directly maps row 9 as the field header, bringing in `Country` (`F1`) and monthly columns (`2014-01-01` through `2016-12-01`) while bypassing blank lines.
+1. Ingestion & Header Handling
 
-### 2. Cleansing & Filtering Artifacts
-- **Problem**: Hidden spreadsheet notes (e.g. `"Hidden Value - Don't Show!!!"` and `"WASTED SPACE"`) contaminate rows.
-- **Solution**: 
-  - `Select Tool`: Drops unwanted artifact columns (`F2`, `Date>>>`, `F40`).
-  - `Data Cleansing Tool`: Strips leading and trailing whitespaces.
-  - `Filter Tool`: Filters records on `!IsNull([2014-01-01])`, purging blank spacer rows and lingering header artifacts.
+Raw sheets (NA-1.xlsx, SA-1.xlsx) contain metadata across rows 1–8. Set ImportLine = 9 to map row 9 directly as field headers (Country and 36 monthly date columns), skipping the blank lines and header notes.
 
-### 3. Unpivoting Wide-to-Long (Transpose)
-- **Problem**: Monthly expense values are spread horizontally across 36 columns (`2014-01-01` to `2016-12-01`). Relational joining and time-series aggregation require normalized vertical rows.
-- **Solution**: `Transpose Tool` keeps `Country` as the Key Field and pivots all 36 date fields into two normalized columns:
-  - `Name`: Target date string.
-  - `Value`: Numerical expense amount.
-- **Consolidation**: A `Union Tool` stacks the cleaned North American (3 countries × 36 months = 108 rows) and South American (3 countries × 36 months = 108 rows) streams into a single dataset of **216 rows**.
+2. Cleansing & Filtering
 
-### 4. Dynamic Manager Ingestion & String Sanitization
-- **Problem**: Manager data is distributed across multiple worksheets (`North America`, `Europe`, `South America`) inside `Managers-1.xlsx`. Furthermore, the `Team Size` field contains unstructured text strings (`"135 EE"`, `"235 Ees"`, `"team of 15"`, `"10 Persons"`, `"24 Ppl"`), and country names contain irregular whitespace (`" Canada  "`, `" Chile "`).
-- **Solution**:
-  - `DbFileInput`: Ingests the list of sheet names (`<List of Sheet Names>`).
-  - `Dynamic Input Tool`: Dynamically opens and appends records from each worksheet.
-  - `Data Cleansing Tools`: Strips leading/trailing whitespace and removes letters, punctuation, and extraneous symbols from `Team Size`, converting dirty text strings into pure numeric representations.
+Use the Select tool to drop artifact columns (F2, Date>>>, F40), the Data Cleansing tool to strip leading and trailing whitespace, and the Filter tool on !IsNull([2014-01-01]) to discard empty spacer rows.
 
-### 5. Relational Join & Reconciliation
-- **Problem**: Expense data must be enriched with regional management details. Unmatched records must be accounted for.
-- **Solution**:
-  - `Join Tool (ID 16)`: Joins on `Left.Country = Right.Country`.
-  - Field renaming & casting:
-    - `Left_Name` $\rightarrow$ `Date` (cast to `Date`, length 10).
-    - `Left_Value` $\rightarrow$ `Expense` (Double).
-    - `Right_Team Size` $\rightarrow$ `Team Size` (cast to `Int32`).
-    - `Right_Country` $\rightarrow$ Deselected to eliminate redundancy.
-  - **Reconciliation Check**:
-    - **Join Stream (`J`)**: Exactly **216 records** (100% of expense observations matched).
-    - **Left Unjoined (`L`)**: 0 records (no orphan expense records).
-    - **Right Unjoined (`R`)**: 4 records (`United Kingdom`, `Austria`, `Italy`, `Spain` from the European division, which has no corresponding 2014–2016 expense entries in NA/SA files).
+3. Wide-to-Long Normalization
 
-### 6. Aggregation & Multi-Tab Writing (Block Until Done)
-- **Problem**: Excel files lock during write operations. Writing two sheets (`Summary by Country` and `Detail`) concurrently to `Output.xlsx` will trigger an OS-level file lock error.
-- **Solution**:
-  - `Block Until Done Tool (ID 18)` gates downstream execution.
-  - **Output 1**: Pushes data to `Summarize Tool (ID 17)` (grouping by `Country`, `Manager`, `Team Size` and summing `Expense`), which writes to `Output.xlsx|||Summary by Country` with `Overwrite (Sheet/Range)` enabled.
-  - **Output 2**: Once Output 1 finishes and releases the workbook file lock, Output 2 streams all 216 detailed records to `Output.xlsx|||Detail`.
+The Transpose tool keeps Country as the key field and collapses the 36 date columns into normalized Name (date) and Value (expense) rows. A Union tool then stacks the NA and SA streams into a single 216-row dataset.
+
+4. Manager Ingestion & String Sanitization
+
+DbFileInput and Dynamic Input read all worksheets from Managers-1.xlsx. The Data Cleansing tool removes irregular whitespace from country names and strips text from Team Size strings (e.g., "135 EE", "team of 15") to convert them to clean integers.
+
+5. Relational Join & Reconciliation
+
+A Join tool matches records on Country, casting Date (Date), Expense (Double), and Team Size (Int32). All 216 expense records match cleanly (0 left unjoined), leaving 4 right unjoined European managers who lack expense data.
+
+6. Aggregation & Multi-Tab Writing
+
+A Block Until Done tool prevents Excel write-lock errors on Output.xlsx. The first stream summarizes expenses by Country, Manager, and Team Size into the Summary by Country tab. Once that lock releases, the second stream writes the 216 granular records into the Detail tab.
 
 ---
 
