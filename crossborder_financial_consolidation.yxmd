@@ -1,0 +1,855 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\..\..\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>9</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Ingest North America expenses starting at row 9</AnnotationText>
+          <DefaultAnnotationText>NA-1.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="F1" size="255" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="F2" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Date&gt;&gt;&gt;" size="255" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2014-01-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-02-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-03-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-04-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-05-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-06-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-07-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-08-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-09-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-10-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-11-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-12-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-01-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-02-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-03-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-04-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-05-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-06-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-07-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-08-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-09-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-10-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-11-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-12-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-01-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-02-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-03-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-04-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-05-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-06-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-07-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-08-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-09-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-10-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-11-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-12-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F40" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\NA-1.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\..\..\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>9</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Ingest South America expenses starting at row 9</AnnotationText>
+          <DefaultAnnotationText>SA-1.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="F1" size="255" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="F2" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Date&gt;&gt;&gt;" size="255" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2014-01-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-02-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-03-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-04-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-05-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-06-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-07-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-08-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-09-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-10-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-11-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2014-12-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-01-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-02-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-03-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-04-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-05-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-06-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-07-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-08-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-09-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-10-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-11-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2015-12-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-01-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-02-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-03-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-04-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-05-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-06-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-07-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-08-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-09-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-10-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-11-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="2016-12-01" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F40" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\SA-1.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\..\..\Users\adeko\Desktop\Data Projects\Alteryx project\Managers-1.xlsx|||&lt;List of Sheet Names&gt;</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get worksheet names list from Managers sheet</AnnotationText>
+          <DefaultAnnotationText>Managers-1.xlsx
+Query=&lt;List of Sheet Names&gt;</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sheet Names" size="31" source="File: C:\Users\adeko\Desktop\Data Projects\Alteryx project\Managers-1.xlsx|||&lt;List of Sheet Names&gt;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="F1" selected="True" rename="Country" />
+            <SelectField field="F2" selected="False" />
+            <SelectField field="Date&gt;&gt;&gt;" selected="False" />
+            <SelectField field="F40" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Rename F1 to Country and drop irrelevant columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Country","2014-01-01","2014-02-01","2014-03-01","2014-04-01","2014-05-01","2014-06-01","2014-07-01","2014-08-01","2014-09-01","2014-10-01","2014-11-01","2014-12-01","2015-01-01","2015-02-01","2015-03-01","2015-04-01","2015-05-01","2015-06-01","2015-07-01","2015-08-01","2015-09-01","2015-10-01","2015-11-01","2015-12-01","2016-01-01","2016-02-01","2016-03-01","2016-04-01","2016-05-01","2016-06-01","2016-07-01","2016-08-01","2016-09-01","2016-10-01","2016-11-01","2016-12-01"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remove null rows, null columns, and trim whitespace</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="510" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>2014-01-01</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2026-09-24 17:23:56</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2026-09-24 17:23:56</StartDate>
+              <EndDate>2026-09-24 17:23:56</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter out residual header rows</AnnotationText>
+          <DefaultAnnotationText>!IsNull([2014-01-01])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="630" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Country" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Country" selected="False" />
+            <Field field="2014-01-01" selected="True" />
+            <Field field="2014-02-01" selected="True" />
+            <Field field="2014-03-01" selected="True" />
+            <Field field="2014-04-01" selected="True" />
+            <Field field="2014-05-01" selected="True" />
+            <Field field="2014-06-01" selected="True" />
+            <Field field="2014-07-01" selected="True" />
+            <Field field="2014-08-01" selected="True" />
+            <Field field="2014-09-01" selected="True" />
+            <Field field="2014-10-01" selected="True" />
+            <Field field="2014-11-01" selected="True" />
+            <Field field="2014-12-01" selected="True" />
+            <Field field="2015-01-01" selected="True" />
+            <Field field="2015-02-01" selected="True" />
+            <Field field="2015-03-01" selected="True" />
+            <Field field="2015-04-01" selected="True" />
+            <Field field="2015-05-01" selected="True" />
+            <Field field="2015-06-01" selected="True" />
+            <Field field="2015-07-01" selected="True" />
+            <Field field="2015-08-01" selected="True" />
+            <Field field="2015-09-01" selected="True" />
+            <Field field="2015-10-01" selected="True" />
+            <Field field="2015-11-01" selected="True" />
+            <Field field="2015-12-01" selected="True" />
+            <Field field="2016-01-01" selected="True" />
+            <Field field="2016-02-01" selected="True" />
+            <Field field="2016-03-01" selected="True" />
+            <Field field="2016-04-01" selected="True" />
+            <Field field="2016-05-01" selected="True" />
+            <Field field="2016-06-01" selected="True" />
+            <Field field="2016-07-01" selected="True" />
+            <Field field="2016-08-01" selected="True" />
+            <Field field="2016-09-01" selected="True" />
+            <Field field="2016-10-01" selected="True" />
+            <Field field="2016-11-01" selected="True" />
+            <Field field="2016-12-01" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Unpivot monthly expense columns into rows</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="798" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Union North and South America expense streams</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="198" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\..\..\Users\adeko\Desktop\Data Projects\Alteryx project\Managers-1.xlsx|||`North America$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ReadList</Mode>
+          <ReadList_Field>Sheet Names</ReadList_Field>
+          <ReadList_Type>FileName</ReadList_Type>
+          <ErrorBehaviour>Error</ErrorBehaviour>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Dynamically read all worksheets from Managers sheet</AnnotationText>
+          <DefaultAnnotationText>Managers-1.xlsx
+Query=`North America$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="342" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Country","Manager","Team Size"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Trim leading and trailing whitespace</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="474" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Team Size"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">True</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Strip letters, punctuation Team Size</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="942" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Country" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Country" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Name" selected="True" rename="Date" input="Left_" type="Date" size="10" />
+                <SelectField field="Left_Value" selected="True" rename="Expense" input="Left_" />
+                <SelectField field="Right_Country" selected="False" rename="Right_Country" input="Right_" />
+                <SelectField field="Right_Team Size" selected="True" input="Right_" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Join expenses with managers on Country</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1098" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sequence summary output before detail output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1230" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Country" action="GroupBy" rename="Country" />
+            <SummarizeField field="Manager" action="GroupBy" rename="Manager" />
+            <SummarizeField field="Expense" action="Sum" rename="Expense" />
+            <SummarizeField field="Team Size" action="GroupBy" rename="Team Size" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Aggregate monthly expenses</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1386" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">..\..\..\Users\adeko\Desktop\Data Projects\Alteryx project\Output.xlsx|||Summary by COuntry</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write country summary records to workbook</AnnotationText>
+          <DefaultAnnotationText>Output.xlsx
+Query=Summary by COuntry</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1398" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">..\..\..\Users\adeko\Desktop\Data Projects\Alteryx project\Output.xlsx|||Detail</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write Details to another sheet in the same workbook</AnnotationText>
+          <DefaultAnnotationText>Output.xlsx
+Query=Detail</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="F1" selected="True" rename="Country" />
+            <SelectField field="F2" selected="False" />
+            <SelectField field="Date&gt;&gt;&gt;" selected="False" />
+            <SelectField field="F40" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Rename F1 to Country and drop irrelevant columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="354" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Country","2014-01-01","2014-02-01","2014-03-01","2014-04-01","2014-05-01","2014-06-01","2014-07-01","2014-08-01","2014-09-01","2014-10-01","2014-11-01","2014-12-01","2015-01-01","2015-02-01","2015-03-01","2015-04-01","2015-05-01","2015-06-01","2015-07-01","2015-08-01","2015-09-01","2015-10-01","2015-11-01","2015-12-01","2016-01-01","2016-02-01","2016-03-01","2016-04-01","2016-05-01","2016-06-01","2016-07-01","2016-08-01","2016-09-01","2016-10-01","2016-11-01","2016-12-01"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remove null rows, null columns, and trim whitespace</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="510" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>2014-01-01</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2026-09-24 17:23:56</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2026-09-24 17:23:56</StartDate>
+              <EndDate>2026-09-24 17:23:56</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter out residual header rows</AnnotationText>
+          <DefaultAnnotationText>!IsNull([2014-01-01])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="630" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Country" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Country" selected="False" />
+            <Field field="2014-01-01" selected="True" />
+            <Field field="2014-02-01" selected="True" />
+            <Field field="2014-03-01" selected="True" />
+            <Field field="2014-04-01" selected="True" />
+            <Field field="2014-05-01" selected="True" />
+            <Field field="2014-06-01" selected="True" />
+            <Field field="2014-07-01" selected="True" />
+            <Field field="2014-08-01" selected="True" />
+            <Field field="2014-09-01" selected="True" />
+            <Field field="2014-10-01" selected="True" />
+            <Field field="2014-11-01" selected="True" />
+            <Field field="2014-12-01" selected="True" />
+            <Field field="2015-01-01" selected="True" />
+            <Field field="2015-02-01" selected="True" />
+            <Field field="2015-03-01" selected="True" />
+            <Field field="2015-04-01" selected="True" />
+            <Field field="2015-05-01" selected="True" />
+            <Field field="2015-06-01" selected="True" />
+            <Field field="2015-07-01" selected="True" />
+            <Field field="2015-08-01" selected="True" />
+            <Field field="2015-09-01" selected="True" />
+            <Field field="2015-10-01" selected="True" />
+            <Field field="2015-11-01" selected="True" />
+            <Field field="2015-12-01" selected="True" />
+            <Field field="2016-01-01" selected="True" />
+            <Field field="2016-02-01" selected="True" />
+            <Field field="2016-03-01" selected="True" />
+            <Field field="2016-04-01" selected="True" />
+            <Field field="2016-05-01" selected="True" />
+            <Field field="2016-06-01" selected="True" />
+            <Field field="2016-07-01" selected="True" />
+            <Field field="2016-08-01" selected="True" />
+            <Field field="2016-09-01" selected="True" />
+            <Field field="2016-10-01" selected="True" />
+            <Field field="2016-11-01" selected="True" />
+            <Field field="2016-12-01" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Unpivot monthly expense columns into rows</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output26" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output26" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="15" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Join" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output2" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output26" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>crossborder_financial_consolidation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="57902084-8c30-4209-81a7-0cc597e29fe7" />
+      <Telemetry>
+        <PreviousWorkflowId value="4879d7ee-9030-4211-98c8-5b4f68446687" />
+        <OriginWorkflowId value="4879d7ee-9030-4211-98c8-5b4f68446687" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
