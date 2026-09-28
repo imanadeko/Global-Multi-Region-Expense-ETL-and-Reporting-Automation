@@ -1,9 +1,5 @@
 # Global Multi-Region Expense ETL & Reporting Automation
 
-[![Alteryx](https://img.shields.io/badge/Alteryx-Designer%202021%2B-blue.svg)](https://www.alteryx.com/)
-[![Workflow Type](https://img.shields.io/badge/Workflow-.yxmd%20%7C%20.yxzp-orange.svg)]()
-[![Output](https://img.shields.io/badge/Output-Excel%20Dual--Sheet-green.svg)]()
-[![Status](https://img.shields.io/badge/Status-Completed-success.svg)]()
 
 An automated end-to-end Alteryx ETL pipeline designed to ingest, cleanse, reshape, and consolidate multi-regional financial expense data and organizational hierarchy structures. The workflow automates the normalization of wide-format monthly financial records across North America and South America, sanitizes messy organizational attributes across dynamic multi-sheet workbooks, and orchestrates sequential multi-tab Excel reporting.
 
@@ -17,7 +13,7 @@ This project delivers a production-grade Alteryx workflow (`.yxmd`) and package 
 - **Ingests heterogeneous regional files** without relying on manual cell selections.
 - **Normalizes 36 months of horizontal financial records** (2014–2016) into structured time-series observations.
 - **Dynamically reads multi-tab manager records** across global territories.
-- **Sanitizes messy numeric/string fields** (stripping arbitrary text suffixes like `"135 EE"` or `"team of 15"` into pure integers).
+- **Cleans messy numeric/string fields**.
 - **Sequences dual-sheet Excel outputs** (`Summary by Country` and `Detail`) within a single target file using Alteryx's `Block Until Done` tool to prevent write collisions.
 
 ---
@@ -46,63 +42,8 @@ This project delivers a production-grade Alteryx workflow (`.yxmd`) and package 
 
 ## Pipeline Architecture
 
-```mermaid
-flowchart TD
-    subgraph INGESTION["01. Ingestion & Pre-Processing"]
-        NA["NA-1.xlsx<br/>(Sheet1, Import Line 9)"]
-        SA["SA-1.xlsx<br/>(Sheet1, Import Line 9)"]
-        MGR_SHEETS["Managers-1.xlsx<br/>(Sheet Names List)"]
-    end
+<img width="1920" height="1080" alt="Screenshot 2026-09-24 221318" src="https://github.com/user-attachments/assets/3cb8c324-619a-4735-96fd-f79957d7c1e6" />
 
-    subgraph CLEANSING["02. Expense Cleansing & Reshaping"]
-        SEL_NA["Select Tool (ID 3)<br/>Rename Country, drop F2/F40"]
-        CLEAN_NA["Data Cleansing (ID 4)<br/>Trim whitespace, clean nulls"]
-        FILT_NA["Filter Tool (ID 5)<br/>!IsNull(2014-01-01)"]
-        TRANS_NA["Transpose Tool (ID 6)<br/>Wide to Long (Key: Country)"]
-
-        SEL_SA["Select Tool (ID 7)<br/>Rename Country, drop F2/F40"]
-        CLEAN_SA["Data Cleansing (ID 8)<br/>Trim whitespace, clean nulls"]
-        FILT_SA["Filter Tool (ID 9)<br/>!IsNull(2014-01-01)"]
-        TRANS_SA["Transpose Tool (ID 10)<br/>Wide to Long (Key: Country)"]
-
-        UNION["Union Tool (ID 15)<br/>Combine NA + SA Streams"]
-    end
-
-    subgraph MGR_PIPELINE["03. Dynamic Manager Ingestion & Cleansing"]
-        DYN_IN["Dynamic Input Tool (ID 12)<br/>Iterate & read all sheets"]
-        MGR_CLEAN1["Data Cleansing (ID 13)<br/>Trim leading/trailing whitespace"]
-        MGR_CLEAN2["Data Cleansing (ID 14)<br/>Remove letters/punctuation from Team Size"]
-    end
-
-    subgraph INTEGRATION["04. Relational Join & Schema Standardization"]
-        JOIN["Join Tool (ID 16)<br/>Key: Country = Country<br/>Cast Date: Date, Team Size: Int32"]
-    end
-
-    subgraph OUTPUT_ORCHESTRATION["05. Output Sequencing & Aggregation"]
-        BUD["Block Until Done (ID 18)<br/>Sequences Stream 1 before Stream 2"]
-        SUMM["Summarize Tool (ID 17)<br/>GroupBy Country, Manager, Team Size<br/>Sum Expense"]
-        OUT_SUMM["DbFileOutput (ID 19)<br/>Output.xlsx ||| Summary by Country"]
-        OUT_DET["DbFileOutput (ID 20)<br/>Output.xlsx ||| Detail"]
-    end
-
-    NA --> SEL_NA --> CLEAN_NA --> FILT_NA --> TRANS_NA --> UNION
-    SA --> SEL_SA --> CLEAN_SA --> FILT_SA --> TRANS_SA --> UNION
-
-    MGR_SHEETS --> DYN_IN --> MGR_CLEAN1 --> MGR_CLEAN2 --> JOIN
-
-    UNION -->|Left Input| JOIN
-    MGR_CLEAN2 -->|Right Input| JOIN
-
-    JOIN -->|216 Cleaned Records| BUD
-    BUD -->|Output 1: Sequence First| SUMM --> OUT_SUMM
-    BUD -->|Output 2: Sequence Second| OUT_DET
-
-    style INGESTION fill:#E8F5E9,stroke:#4CAF50,stroke-width:1.5px
-    style CLEANSING fill:#E1F5FE,stroke:#03A9F4,stroke-width:1.5px
-    style MGR_PIPELINE fill:#FFF3E0,stroke:#FF9800,stroke-width:1.5px
-    style INTEGRATION fill:#EDE7F6,stroke:#673AB7,stroke-width:1.5px
-    style OUTPUT_ORCHESTRATION fill:#FFEBEE,stroke:#E91E63,stroke-width:1.5px
-```
 
 ---
 
